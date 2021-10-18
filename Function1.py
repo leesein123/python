@@ -7,3 +7,9 @@ def connectURI(server, port):
 #호출
 print( connectURI("credu.com", "80") )
 print( connectURI(port="80", server="credu.com") )
+
+colors =["apple","test"]
+for x in colors:
+    if x.__contains__("e"):
+        print(x)
+    
