@@ -1,3 +1,5 @@
+# https://github.com/papasmf1/python1018  참고
+
 def divide(a,b):
     return a/b
 try:
