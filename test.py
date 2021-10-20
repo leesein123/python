@@ -1,14 +1,8 @@
-import argparse
-import json
-import socket
-import threading
+f =open("C:/test.txt","wt")
 
-def handle_client(client_list, conn, address):
-    name = conn.recv(1024)
-    entry = dict(zip(['name', 'address', 'port'], [name, address[0], address[1]]))
-    client_list[name] = entry
-    conn.sendall(json.dumps(client_list))
-    conn.shutdown(socket.SHUT_RDWR)
-    conn.close()
+f.write("test\n sadfsdf")
+f.close()
 
- print ("dfsdf")   
+f =open("C:/test.txt","r")
+f.read()
+f.close()
