@@ -31,11 +31,11 @@ class DemoWindow(QMainWindow):
     def checkBoxState(self):
         msg = ""
         if self.checkBox1.isChecked() == True:
-            msg += "아이폰 "
+            msg += "아이폰 " +"\t"
         if self.checkBox2.isChecked() == True:
-            msg += "안드로이드폰 "
+            msg += "안드로이드폰 "+"\t"
         if self.checkBox3.isChecked() == True:
-            msg += "윈도우폰 "
+            msg += "윈도우폰 "+"\t"
         self.statusBar.showMessage(msg)
 
 if __name__ == "__main__":

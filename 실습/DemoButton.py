@@ -6,9 +6,9 @@ from PyQt5.QtCore import *
 class DemoWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setupUI()
+        self.setupUi()
 
-    def setupUI(self):
+    def setupUi(self):
         btn1 = QPushButton("닫기", self)
         btn1.move(20, 20)
         btn1.clicked.connect(QCoreApplication.instance().quit)
