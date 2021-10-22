@@ -5,6 +5,9 @@ from PyQt5 import uic
 import urllib.request
 from bs4 import BeautifulSoup
 
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT
+
 #화면로딩
 form_class = uic.loadUiType("C:\\python_work\\mainForm.ui")[0]
 
@@ -33,7 +36,8 @@ class DemoForm(QMainWindow,form_class):
         f.close()
         self.label.setText("웹 크롤링 종료")  
     def secondClick(self):
-        self.label.setText("두번째")   
+        self.label_1.setText("두번째")   
+   
     def thirdClick(self):
         self.label.setText("세번째")   
     def fourthClick(self): 
